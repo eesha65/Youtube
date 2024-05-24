@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Youtube</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .thumbnail {
+        object-fit: contain;
+        width: 100%;
+      }
+      .search_bar {
+        padding-right: 0px;
+        width: 350px;
+        height: 25px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        margin: 10px 0px;
+      }
+      .search {
+        display: flex;
+        justify-content: center;
+        border: none;
+        width: 400px;
+        margin: auto auto;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px grey;
+      }
+      .card {
+        margin: 10px;
+        width: 20vw;
+        height: auto;
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 14px;
+        transition: width 0.15s;
+      }
+      .card:hover {
+        width: 21vw;
+      }
+      .card:active {
+        opacity: 0.8;
+      }
+      .all_videos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .channel {
+        margin: 10px 4px;
+      }
+      .search_header {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        text-align: center;
+        object-position: center;
+        align-items: center;
+        border: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="search_header" style="display: flex;justify-content: space-between;">
+      <img
+        class="logo"
+        style="width: 50px;margin-left: 20px;"
+        src="thunmbnail/logo.png"
+        alt="logo"
+      />
+      <div style="display: flex;";>
+        <div class="search">
+          <input class="search_bar" type="text" placeholder="Search" />
+          <img
+            width="30"
+            src="https://supersimple.dev/public/img/exercises/youtube/icons/search.svg"
+            alt="search"
+          />
+        </div>
+
+        <img
+          width="40"
+          height="40"
+          style="
+            margin-top: 3px;
+            margin-left: 25px;
+            display: flex;
+            border: none;
+            border-radius: 50%;
+            background-color: rgb(245, 245, 245);
+          "
+          src="https://supersimple.dev/public/img/exercises/youtube/icons/voice-search-icon.svg"
+          alt="search"
+        />
+      </div>
+      <img width="50" style="border-radius: 50%; margin:10px 10px" src="thunmbnail/my-channel.jpg" alt="profile">
+    </div>
+    <div class="all_videos">
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+          <img class="thumbnail" src="thunmbnail/thumbnail-1.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/c/mkbhd">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-1.jpeg"
+              alt="dog"
+            />
+          </a>
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+          <img class="thumbnail" src="thunmbnail/thumbnail-2.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/c/markiplier">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-2.jpeg"
+              alt="dog"
+            />
+          </a>
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+          <img class="thumbnail" src="thunmbnail/thumbnail-3.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/user/SSSniperWolf">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-3.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="thumbnail" src="thunmbnail/thumbnail-4.webp" />
+        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"></a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/c/veritasium">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-4.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+          <img class="thumbnail" src="thunmbnail/thumbnail-5.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/c/CSDojo">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-5.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+          <img class="thumbnail" src="thunmbnail/thumbnail-6.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-6.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+          <img class="thumbnail" src="thunmbnail/thumbnail-7.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-7.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+          <img class="thumbnail" src="thunmbnail/thumbnail-8.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-8.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+          <img class="thumbnail" src="thunmbnail/thumbnail-9.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-9.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+          <img class="thumbnail" src="thunmbnail/thumbnail-10.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/user/businessinsider">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-10.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+          <img class="thumbnail" src="thunmbnail/thumbnail-11.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/c/Destinationtips">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-11.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+          <img class="thumbnail" src="thunmbnail/thumbnail-12.webp" />
+        </a>
+        <div style="display: flex">
+          <a href="https://www.youtube.com/teded">
+            <img
+              class="channel"
+              width="50"
+              height="50"
+              style="border-radius: 50%"
+              src="channel/channel-12.jpeg"
+              alt="dog"
+            />
+          </a>
+
+          <div style="margin-left: 5px; font-size: 0.7rem">
+            <p style="font-size: 0.7rem; font-weight: bold">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p style="color: grey">Marques Brownlee</p>
+            <p style="color: grey">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+</html>
